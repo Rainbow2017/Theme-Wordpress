@@ -1,7 +1,6 @@
 <?php 
 /**
 @ Thiết lập hàm hiển thị logo
-@ thachpham_logo()
 **/
 if ( ! function_exists( 'thachpham_logo' ) ) {
   function thachpham_logo() {?>
@@ -32,7 +31,6 @@ if ( ! function_exists( 'thachpham_logo' ) ) {
  
 /**
 @ Thiết lập hàm hiển thị menu
-@ thachpham_menu( $slug )
 **/
 if ( ! function_exists( 'thachpham_menu' ) ) {
   function thachpham_menu( $slug ) {
@@ -48,7 +46,6 @@ if ( ! function_exists( 'thachpham_menu' ) ) {
 /**
 @ Tạo hàm phân trang cho index, archive.
 @ Hàm này sẽ hiển thị liên kết phân trang theo dạng chữ: Newer Posts & Older Posts
-@ thachpham_pagination()
 **/
 if ( ! function_exists( 'thachpham_pagination' ) ) {
   function thachpham_pagination() {
@@ -76,7 +73,6 @@ if ( ! function_exists( 'thachpham_pagination' ) ) {
 @ Hàm hiển thị ảnh thumbnail của post.
 @ Ảnh thumbnail sẽ không được hiển thị trong trang single
 @ Nhưng sẽ hiển thị trong single nếu post đó có format là Image
-@ thachpham_thumbnail( $size )
 **/
 if ( ! function_exists( 'thachpham_thumbnail' ) ) {
   function thachpham_thumbnail( $size ) {
@@ -91,7 +87,6 @@ if ( ! function_exists( 'thachpham_thumbnail' ) ) {
 @ Hàm hiển thị tiêu đề của post trong .entry-header
 @ Tiêu đề của post sẽ là nằm trong thẻ <h1> ở trang single
 @ Còn ở trang chủ và trang lưu trữ, nó sẽ là thẻ <h2>
-@ thachpham_entry_header()
 **/
 if ( ! function_exists( 'thachpham_entry_header' ) ) {
   function thachpham_entry_header() {
@@ -114,7 +109,6 @@ if ( ! function_exists( 'thachpham_entry_header' ) ) {
 }
 /**
 @ Hàm hiển thị thông tin của post (Post Meta)
-@ thachpham_entry_meta()
 **/
 if( ! function_exists( 'thachpham_entry_meta' ) ) {
   function thachpham_entry_meta() {
@@ -158,7 +152,7 @@ add_filter( 'excerpt_more', 'thachpham_readmore' );
 @ Hàm hiển thị nội dung của post type
 @ Hàm này sẽ hiển thị đoạn rút gọn của post ngoài trang chủ (the_excerpt)
 @ Nhưng nó sẽ hiển thị toàn bộ nội dung của post ở trang single (the_content)
-@ thachpham_entry_content()
+
 **/
 if ( ! function_exists( 'thachpham_entry_content' ) ) {
   function thachpham_entry_content() {
@@ -184,7 +178,6 @@ if ( ! function_exists( 'thachpham_entry_content' ) ) {
 }
 /**
 @ Hàm hiển thị tag của post
-@ thachpham_entry_tag()
 **/
 if ( ! function_exists( 'thachpham_entry_tag' ) ) {
   function thachpham_entry_tag() {
