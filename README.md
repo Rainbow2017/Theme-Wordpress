@@ -1,2 +1,2 @@
 # theme_wordpress
-# made by rainbow
+# made by Rainbow Team
